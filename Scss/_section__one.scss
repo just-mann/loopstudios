@@ -1,0 +1,72 @@
+// Import Responsive Style
+@import 'mixins';
+
+.section__one {
+  position: relative;
+  padding: 7.5625rem 0;
+
+  @include breakpoint-desktop(desktop) {
+    position: relative;
+    padding: 9.8125rem 10.1875rem;
+  }
+
+  &__img {
+    display: block;
+    width: 87%;
+    margin: 0 auto 3.625rem auto;
+    z-index: 1;
+    transition: all 0.6s;
+
+    @include breakpoint-desktop(desktop) {
+      position: absolute;
+      display: inline;
+      width: 45.6875rem;
+      margin-top: 7.5625rem;
+      min-height: 30.9375rem;
+      z-index: 1;
+      transition: all 0.6s;
+    }
+  }
+
+  &__details {
+    background-color: $white;
+    z-index: 2;
+
+    @include breakpoint-desktop(desktop) {
+      position: absolute;
+      top: 21.1875rem;
+      right: 23.25rem;
+      padding: 5.75rem 5.5rem;
+      background-color: $white;
+      min-height: 25.375rem;
+      width: 36rem;
+      z-index: 2;
+    }
+
+    &__heading {
+      width: 21.3125rem;
+      font-size: 2.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 2.4375rem auto;
+      line-height: 2.75rem;
+
+      @include breakpoint-desktop(desktop) {
+        margin-bottom: 2.4375rem;
+      }
+    }
+
+    &__parag {
+      font-size: 1.2rem;
+      width: 22.3125rem;
+      margin: auto;
+      text-align: center;
+
+      @include breakpoint-desktop(desktop) {
+        width: 30.3125rem;
+        font-size: 1.12rem;
+      }
+    }
+  }
+
+}

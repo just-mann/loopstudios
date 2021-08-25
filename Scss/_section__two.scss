@@ -1,0 +1,29 @@
+// Import Responsive Style
+@import 'mixins';
+
+.section__two {
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $fontTwo;
+    font-size: 2.75rem;
+    margin: 0 auto 4.125rem auto;
+
+
+
+    @include breakpoint-desktop(desktop) {
+
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+    div {
+      width: 100%;
+    }
+  }
+}

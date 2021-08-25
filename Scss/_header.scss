@@ -1,0 +1,130 @@
+// Import Responsive Style
+@import 'mixins';
+
+// Header Styles
+.header {
+  min-height: 52.0625rem;
+  width: 100%;
+  background: url('/images/mobile/image-hero.jpg') no-repeat center center / cover;
+  transition: all 0.6s ease-in-out;
+  transition: all 0.6s;
+
+
+  @include breakpoint-desktop(desktop) {
+    min-height: 41.625rem;
+    width: 100%;
+    background: url('/images/desktop/image-hero.jpg') no-repeat center center / cover;
+  }
+
+  &__nav {
+    padding: 3.0625rem 1.9825rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.6s;
+
+    @include breakpoint-desktop(desktop) {
+      margin-bottom: 5.6875rem;
+      padding: 3.6875rem 10.0625rem;
+    }
+
+    &__logo {
+
+
+      @include breakpoint-desktop(desktop) {
+
+      }
+    }
+
+    &__hamburger {
+      display: block;
+      transition: all 0.6s;
+      cursor: pointer;
+
+      @include breakpoint-desktop(desktop) {
+        display: none;
+      }
+    }
+
+    &__links {
+      display: none;
+      transition: all 0.6s;
+
+      @include breakpoint-desktop(desktop) {
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: $white;
+        font-family: $fontOne;
+        font-size: 1.32rem;
+        font-weight: bold;
+        transition: all 0.6s ease-in-out;
+
+        @include breakpoint-desktop(desktop) {
+          // transition: all 0.6s ease-in-out;
+
+
+          &:hover {
+            transition: all 0.6s ease-in-out;
+
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 35px;
+              left: 55%;
+              transform: translate(-50%);
+              height: 4px;
+              width: 37px;
+              margin: auto;
+              background: $white;
+              border-radius: 10000px;
+            }
+          }
+
+          &:not(:last-child) {
+            margin-right: 2.0625rem;
+          }
+        }
+      }
+
+    }
+  }
+
+  &__hero {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    width: 87%;
+    height: 15.6875rem;
+    margin: auto;
+    border: 0.375rem solid $white;
+    font-family: $fontTwo;
+    font-size: 2.6875rem;
+    padding: 2rem 2.8125rem;
+    color: $white;
+
+    p {
+      line-height: 3rem;
+    }
+
+    @include breakpoint-desktop(desktop) {
+      font-size: 3.5125rem;
+      padding: 2.125rem 6.125rem 2.3125rem 3rem;
+      min-height: 17.5rem;
+      width: 40.8125rem;
+      margin-left: 10.125rem;
+      margin-bottom: 8.8125rem;
+
+      p {
+        line-height: 4rem;
+      }
+    }
+  }
+}
