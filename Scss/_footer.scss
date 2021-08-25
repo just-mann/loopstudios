@@ -1,0 +1,8 @@
+// Import Responsive Style
+@import 'mixins';
+
+.footer {
+  width: 100%;
+  min-height: 37.625rem;
+  background-color: $black;
+}

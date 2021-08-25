@@ -3,27 +3,209 @@
 
 .section__two {
 
-  h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: $fontTwo;
-    font-size: 2.75rem;
-    margin: 0 auto 4.125rem auto;
+  @include breakpoint-desktop(desktop) {
+    min-height: 77.9375rem;
+    padding: 0 10.125rem;
+  }
 
-
+  .section__one__top {
+    max-width: 100%;
 
     @include breakpoint-desktop(desktop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $fontTwo;
+      font-size: 2.25rem;
+      margin-bottom: 4.125rem;
+
+
+
+      @include breakpoint-desktop(desktop) {
+        text-align: left;
+        // margin-left: 10.125rem;
+      }
+    }
+
+    .desktop__see__all__button {
+      text-decoration: none;
+      color: $black;
+      background: yellow;
+      margin-bottom: 4.125rem;
+      display: none;
+
+      @include breakpoint-desktop(desktop) {
+        display: flex;
+        align-items: center;
+        width: 12.75rem;
+        // margin: 2.625rem auto 7.4375rem auto;
+        padding: 1.125rem 3.4375rem;
+        background-color: $white;
+        border: 0.1875rem solid $black;
+        font-family: $fontTwo;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.6s;
+      }
     }
   }
 
   .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 1.75rem;
+    width: 100%;
+    // background: yellow;
 
-    div {
-      width: 100%;
+
+    @include breakpoint-desktop(desktop) {
+      // padding: 0 10.125rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gridDiv {
+      position: relative;
+      width: 87%;
+      margin: auto;
+      padding: 4.1675rem 0 2.2rem 1.5625rem;
+      min-height: 9.5625rem;
+      transition: all 0.6s;
+
+
+      @include breakpoint-desktop(desktop) {
+        width: 100%;
+        min-height: 28.3125rem;
+        padding: 22rem 0 2.2rem 1.5625rem;
+      }
+
+      p {
+        position: absolute;
+        font-size: 1.55rem;
+        width: 8.375rem;
+        text-transform: uppercase;
+        color: $white;
+        z-index: 2;
+        opacity: 0.5;
+
+        @include breakpoint-desktop(desktop) {
+
+        }
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+
+
+        @include breakpoint-desktop(desktop) {
+          background: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+
+    .deep__earth {
+      background: url('../images/mobile/image-deep-earth.jpg') no-repeat center center / cover;
+
+
+      @include breakpoint-desktop(desktop) {
+        background: url('../images/desktop/image-deep-earth.jpg') no-repeat center center / cover;
+      }
+    }
+
+    .night__arcade {
+      background: url('../images/mobile/image-night-arcade.jpg') no-repeat center center / cover;
+
+
+      @include breakpoint-desktop(desktop) {
+        background: url('../images/desktop/image-night-arcade.jpg') no-repeat center center / cover;
+      }
+    }
+
+    .soccer__team {
+      background: url('../images/mobile/image-soccer-team.jpg') no-repeat center center / cover;
+
+      @include breakpoint-desktop(desktop) {
+        background: url('../images/desktop/image-soccer-team.jpg') no-repeat center center / cover;
+      }
+    }
+
+    .the__grid {
+      background: url('../images/mobile/image-grid.jpg') no-repeat center center / cover;
+
+      @include breakpoint-desktop(desktop) {
+        background: url('../images/desktop/image-grid.jpg') no-repeat center center / cover;
+      }
+
+      p {
+        width: 6.175rem;
+      }
+    }
+
+    .above__vr {
+      background: url('../images/mobile/image-from-above.jpg') no-repeat center center / cover;
+
+      @include breakpoint-desktop(desktop) {
+        background: url('../images/desktop/image-from-above.jpg') no-repeat center center / cover;
+      }
+    }
+
+    .pocket__borealis {
+      background: url('../images/mobile/image-pocket-borealis.jpg') no-repeat center center / cover;
+
+      @include breakpoint-desktop(desktop) {
+        background: url('../images/desktop/image-pocket-borealis.jpg') no-repeat center center / cover;
+      }
+    }
+
+    .the__curiosity {
+      background: url('../images/mobile/image-curiosity.jpg') no-repeat center center / cover;
+
+
+      @include breakpoint-desktop(desktop) {
+        background: url('../images/desktop/image-curiosity.jpg') no-repeat center center / cover;
+      }
+    }
+
+    .fisheye {
+      background: url('../images/mobile/image-fisheye.jpg') no-repeat center center / cover;
+
+
+      @include breakpoint-desktop(desktop) {
+        background: url('../images/desktop/image-fisheye.jpg') no-repeat center center / cover;
+      }
+    }
+  }
+
+  .see__all__button {
+    display: flex;
+    align-items: center;
+    width: 12.75rem;
+    margin: 2.625rem auto 7.4375rem auto;
+    padding: 1.125rem 3.4375rem;
+    background-color: $white;
+    border: 0.1875rem solid $black;
+    font-family: $fontTwo;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.6s;
+
+
+    @include breakpoint-desktop(desktop) {
+      display: none;
     }
   }
 }
