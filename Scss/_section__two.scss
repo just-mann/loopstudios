@@ -41,18 +41,25 @@
 
       @include breakpoint-desktop(desktop) {
         display: flex;
+        justify-content: center;
         align-items: center;
         width: 12.75rem;
-        // margin: 2.625rem auto 7.4375rem auto;
-        padding: 1.125rem 3.4375rem;
+        height: 2.75rem;
+        padding: 1.125rem 2.4375rem;
         background-color: $white;
         border: 0.1875rem solid $black;
         font-family: $fontTwo;
         font-size: 1.3rem;
         font-weight: bold;
         text-transform: uppercase;
-        cursor: pointer;
         transition: all 0.6s;
+
+
+        &:hover {
+          cursor: pointer;
+          background-color: $black;
+          color: $white;
+        }
       }
     }
   }
@@ -190,18 +197,26 @@
 
   .see__all__button {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 12.75rem;
-    margin: 2.625rem auto 7.4375rem auto;
-    padding: 1.125rem 3.4375rem;
+    height: 2.75rem;
+    margin: 2.5rem auto 7.625rem auto;
+    padding: 1.25rem 2.4375rem;
     background-color: $white;
     border: 0.1875rem solid $black;
     font-family: $fontTwo;
     font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
-    cursor: pointer;
     transition: all 0.6s;
+
+
+    &:hover {
+      cursor: pointer;
+      background-color: $black;
+      color: $white;
+    }
 
 
     @include breakpoint-desktop(desktop) {

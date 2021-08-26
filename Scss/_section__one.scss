@@ -5,6 +5,7 @@
 .section__one {
 // Mobile First View
 
+// padding: 0 10.125rem;
 
 
   // Desktop Style
@@ -15,10 +16,11 @@
 
   &__container {
     // Mobile First View
+    background: yellow;
     position: relative;
-    max-width: 80%;
+    max-width: 87%;
     margin: auto;
-    padding-top: 9.8125rem;
+    padding: 7.625rem 0 8rem 0;
 
 
     // Desktop Style
@@ -32,7 +34,8 @@
 
     img {
       // Mobile First View
-
+      max-width: 100%;
+      margin: auto;
 
 
       // Desktop Style
@@ -45,7 +48,7 @@
 
     .section__one__details {
       // Mobile First View
-
+      padding: 3.875rem 0 0 0;
 
 
       // Desktop Style

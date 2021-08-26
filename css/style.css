@@ -159,10 +159,11 @@ body {
   }
 }
 .section__one__container {
+  background: yellow;
   position: relative;
-  max-width: 80%;
+  max-width: 87%;
   margin: auto;
-  padding-top: 9.8125rem;
+  padding: 7.625rem 0 8rem 0;
 }
 @media (min-width: 90rem) {
   .section__one__container {
@@ -172,12 +173,19 @@ body {
     padding-top: 9.8125rem;
   }
 }
+.section__one__container img {
+  max-width: 100%;
+  margin: auto;
+}
 @media (min-width: 90rem) {
   .section__one__container img {
     position: absolute;
     width: 45.75rem;
     height: 31.0625rem;
   }
+}
+.section__one__container .section__one__details {
+  padding: 3.875rem 0 0 0;
 }
 @media (min-width: 90rem) {
   .section__one__container .section__one__details {
@@ -252,20 +260,28 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 12.75rem;
-    padding: 1.125rem 3.4375rem;
+    height: 2.75rem;
+    padding: 1.125rem 2.4375rem;
     background-color: white;
     border: 0.1875rem solid black;
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
-    cursor: pointer;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
+  }
+  .section__two .section__one__top .desktop__see__all__button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
   }
 }
 .section__two .grid {
@@ -392,21 +408,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 12.75rem;
-  margin: 2.625rem auto 7.4375rem auto;
-  padding: 1.125rem 3.4375rem;
+  height: 2.75rem;
+  margin: 2.5rem auto 7.625rem auto;
+  padding: 1.25rem 2.4375rem;
   background-color: white;
   border: 0.1875rem solid black;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
-  cursor: pointer;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
+}
+.section__two .see__all__button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }
 @media (min-width: 90rem) {
   .section__two .see__all__button {
