@@ -108,6 +108,7 @@
 
         p {
           color: $black;
+          opacity: 0.5;
         }
       }
 
@@ -132,6 +133,7 @@
 
         @include breakpoint-desktop(desktop) {
           font-size: 1.55rem;
+          opacity: 0.6;
         }
       }
 

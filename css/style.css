@@ -348,6 +348,7 @@ body {
 }
 .section__two .grid .gridDiv:hover p {
   color: black;
+  opacity: 0.5;
 }
 @media (min-width: 90rem) {
   .section__two .grid .gridDiv {
@@ -372,6 +373,7 @@ body {
 @media (min-width: 90rem) {
   .section__two .grid .gridDiv p {
     font-size: 1.55rem;
+    opacity: 0.6;
   }
 }
 .section__two .grid .gridDiv .overlay {
