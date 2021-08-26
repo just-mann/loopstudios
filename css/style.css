@@ -18,7 +18,7 @@ body {
   font-family: "Alata", sans-serif;
   font-size: 1.11rem;
   text-align: center;
-  width: 80%;
+  max-width: 80%;
   margin: 1rem auto 0 auto;
 }
 .attribution a {
