@@ -338,6 +338,7 @@ body {
   font-size: 1.55rem;
   width: 8.375rem;
   text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   z-index: 2;
   opacity: 0.5;
@@ -424,6 +425,7 @@ body {
   }
 }
 .section__two .see__all__button {
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,6 +441,7 @@ body {
   padding: 1.25rem 2.4375rem;
   background-color: white;
   border: 0.1875rem solid black;
+  color: black;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
