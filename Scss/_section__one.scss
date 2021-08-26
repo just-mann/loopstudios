@@ -16,7 +16,6 @@
 
   &__container {
     // Mobile First View
-    background: yellow;
     position: relative;
     max-width: 87%;
     margin: auto;
@@ -34,7 +33,7 @@
 
     img {
       // Mobile First View
-      max-width: 100%;
+      width: 100%;
       margin: auto;
 
 
@@ -64,7 +63,12 @@
 
       h3 {
         // Mobile First View
-
+        font-family: $fontTwo;
+        font-size: 2.375rem;
+        text-transform: uppercase;
+        text-align: center;
+        width: 21.625rem;
+        margin: auto;
 
 
         // Desktop Style
@@ -72,20 +76,29 @@
           font-size: 2.5625rem;
           text-transform: uppercase;
           font-family: $fontTwo;
+          text-align: left;
           margin: 0 0 2.5625rem 0;
         }
       }
 
       p {
         // Mobile First View
-
+        font-family: $fontOne;
+        color: $darkGray;
+        font-size: 1.32rem;
+        text-align: center;
+        width: 21.725rem;
+        margin: 2.25rem auto 0 auto;
 
 
         // Desktop Style
         @include breakpoint-desktop(desktop) {
-          font-size: 1.1rem;
+          width: 33.975rem;
+          text-align: left;
+          font-size: 1.105rem;
           font-family: $fontOne;
           color: $darkGray;
+          margin: 0;
         }
       }
     }
