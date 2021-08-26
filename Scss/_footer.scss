@@ -12,6 +12,7 @@
 
   @include breakpoint-desktop(desktop) {
     // Desktop Style
+    text-align: justify;
     min-height: 9.9375rem;
 
   }
@@ -94,6 +95,12 @@
         margin-right: 1.625rem;
       }
     }
+  }
+
+  p {
+    color: $darkGray;
+    font-family: $fontOne;
+    font-size: 1.275rem;
   }
 
 }

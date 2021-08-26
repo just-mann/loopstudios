@@ -14,10 +14,12 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  color: white;
+  font-family: "Alata", sans-serif;
+  font-size: 1.2rem;
   text-align: center;
+  margin: 1rem 0 0 0;
 }
-
 .attribution a {
   color: #3e52a3;
 }
@@ -469,6 +471,7 @@ body {
 }
 @media (min-width: 90rem) {
   .footer {
+    text-align: justify;
     min-height: 9.9375rem;
   }
 }
@@ -525,4 +528,9 @@ body {
 }
 .footer__social a:not(:last-child) {
   margin-right: 1.625rem;
+}
+.footer p {
+  color: #8c8c8c;
+  font-family: "Alata", sans-serif;
+  font-size: 1.275rem;
 }

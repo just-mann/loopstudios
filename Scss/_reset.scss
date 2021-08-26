@@ -16,9 +16,15 @@ body {
 }
 
 .attribution {
-  font-size: 11px; text-align: center;
-}
+  color: $white;
+  font-family: $fontOne;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 0 0 0;
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+
 }
