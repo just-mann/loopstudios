@@ -53,12 +53,28 @@
 
     a {
       // Desktop Style
+      position: relative;
       font-size: 1.25rem;
       font-family: $fontOne;
       text-decoration: none;
       color: $white;
       margin: 0 0 2.1875rem 0;
-      transition: all 0.6s;
+      transition: all 0.6s ease-in-out;
+
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2.25rem;
+          left: 50%;
+          transform: translate(-50%);
+          height: 0.25rem;
+          width: 1.888rem;
+          margin: auto;
+          background: $white;
+          border-radius: 10000px;
+        }
+      }
 
       @include breakpoint-desktop(desktop) {
         // Mobile Style
@@ -86,6 +102,7 @@
 
     a {
       // Mobile Style
+      position: relative;
       text-decoration: none;
       color: $white;
       font-size: 2rem;
@@ -93,6 +110,21 @@
 
       &:not(:last-child) {
         margin-right: 1.625rem;
+      }
+
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 2.825rem;
+          left: 50%;
+          transform: translate(-50%);
+          height: 0.25rem;
+          width: 1.875rem;
+          margin: auto;
+          background: $white;
+          border-radius: 10000px;
+        }
       }
     }
   }
