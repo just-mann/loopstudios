@@ -3,6 +3,7 @@
 
 .footer {
   // Mobile Style
+  text-align: center;
   width: 100%;
   min-height: 35.875rem;
   padding: 4.3125rem 0 2.6875rem 0;
@@ -12,11 +13,13 @@
   @include breakpoint-desktop(desktop) {
     // Desktop Style
     min-height: 9.9375rem;
+
   }
 
   &__logo {
     // Mobile Style
-    display: block;
+    // background: yellow;
+    display: inline-block;
     text-align: center;
     margin: 0 auto 3.0625rem auto;
 
@@ -25,11 +28,16 @@
       // Desktop Style
 
     }
+
+    // svg {
+    //   // display: block;
+    //   // align-self: center;
+    //   text-align: center;
+    // }
   }
 
   &__links {
     // Mobile Style
-    // background: yellow;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -38,6 +46,7 @@
 
     @include breakpoint-desktop(desktop) {
       // Desktop Style
+      // background: yellow;
 
     }
 
@@ -57,6 +66,34 @@
       }
     }
 
+  }
+
+  &__social {
+    // Desktop Style
+    // background: yellow;
+    padding: 1.75rem 0 1.625rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    @include breakpoint-desktop(desktop) {
+      // Mobile Style
+
+    }
+
+    a {
+      // Mobile Style
+      text-decoration: none;
+      color: $white;
+      font-size: 2rem;
+      transition: all 0.6s;
+
+      &:not(:last-child) {
+        margin-right: 1.625rem;
+      }
+    }
   }
 
 }
