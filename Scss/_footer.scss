@@ -2,7 +2,61 @@
 @import 'mixins';
 
 .footer {
+  // Mobile Style
   width: 100%;
-  min-height: 37.625rem;
+  min-height: 35.875rem;
+  padding: 4.3125rem 0 2.6875rem 0;
   background-color: $black;
+
+
+  @include breakpoint-desktop(desktop) {
+    // Desktop Style
+    min-height: 9.9375rem;
+  }
+
+  &__logo {
+    // Mobile Style
+    display: block;
+    text-align: center;
+    margin: 0 auto 3.0625rem auto;
+
+
+    @include breakpoint-desktop(desktop) {
+      // Desktop Style
+
+    }
+  }
+
+  &__links {
+    // Mobile Style
+    // background: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    @include breakpoint-desktop(desktop) {
+      // Desktop Style
+
+    }
+
+    a {
+      // Desktop Style
+      font-size: 1.25rem;
+      font-family: $fontOne;
+      text-decoration: none;
+      color: $white;
+      margin: 0 0 2.1875rem 0;
+      transition: all 0.6s;
+
+      @include breakpoint-desktop(desktop) {
+        // Mobile Style
+
+
+      }
+    }
+
+  }
+
 }
