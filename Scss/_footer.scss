@@ -46,12 +46,28 @@
       }
 
       a {
+        position: relative;
         text-decoration: none;
         font-family: $fontTwo;
         font-weight: bold;
         color: $white;
         font-size: 1.5625rem;
 
+
+        &:hover {
+          &::after {
+            content: '';
+            position: absolute;
+            top: 28px;
+            left: 53%;
+            transform: translate(-50%);
+            height: 2px;
+            width: 37px;
+            margin: auto;
+            background: $white;
+            border-radius: 10000px;
+          }
+        }
 
         &:not(:last-child) {
           margin-bottom: 2.25rem;
@@ -91,10 +107,28 @@
       }
 
       a {
+        position: relative;
         text-decoration: none;
         font-family: $fontTwo;
         color: $white;
         font-size: 1.8125rem;
+        transition: 0.5s;
+
+
+        &:hover {
+          &::after {
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: 53%;
+            transform: translate(-50%);
+            height: 0.18rem;
+            width: 29px;
+            margin: auto;
+            background: $white;
+            border-radius: 10000px;
+          }
+        }
 
 
         &:not(:last-child) {
