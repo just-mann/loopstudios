@@ -583,7 +583,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     min-height: 9.875rem;
-    padding: 2.5625rem 10.125rem;
+    padding: 2.75rem 10.125rem 2.75rem 10.125rem;
   }
 }
 @media (min-width: 90rem) {
@@ -615,7 +615,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Josefin Sans", sans-serif;
-  padding: 3.0625rem 0;
+  padding: 3.0625rem 0 3.9375rem 0;
 }
 @media (min-width: 90rem) {
   .footer .div1 .footer__links {
@@ -692,6 +692,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   font-family: "Alata", sans-serif;
+  padding: 1.875rem 0 0 0;
   color: white;
   font-size: 1.1rem;
 }
