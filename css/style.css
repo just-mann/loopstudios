@@ -15,6 +15,7 @@ body {
 }
 
 .attribution {
+  background-color: black;
   color: white;
   font-family: "Alata", sans-serif;
   font-size: 1.11rem;
@@ -165,8 +166,8 @@ body {
   padding: 3.0625rem 1.9825rem;
   background-color: black;
   z-index: 20;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: none;
 }
 @media (min-width: 90rem) {
@@ -579,16 +580,52 @@ body {
 }
 @media (min-width: 90rem) {
   .footer {
-    text-align: justify;
+    background: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 9.9375rem;
+    padding: 1.75rem 10.125rem 2.0625rem 10.125rem;
   }
 }
-.footer__logo {
+@media (min-width: 90rem) {
+  .footer .div1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.footer .div1 .footer__logo {
   display: inline-block;
   text-align: center;
   margin: 0 auto 3.0625rem auto;
 }
-.footer__links {
+@media (min-width: 90rem) {
+  .footer .div1 .footer__logo {
+    text-align: center;
+    margin: 2.7rem 0 1.75rem 0;
+  }
+}
+.footer .div1 .footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,17 +639,34 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.footer__links a {
+@media (min-width: 90rem) {
+  .footer .div1 .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.footer .div1 .footer__links a {
   position: relative;
-  font-size: 1.25rem;
+  font-size: 1.275rem;
   font-family: "Alata", sans-serif;
   text-decoration: none;
   color: white;
-  margin: 0 0 2.1875rem 0;
+  margin: 0.5rem 0 2.1875rem 0;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
-.footer__links a:hover::after {
+.footer .div1 .footer__links a:hover::after {
   content: "";
   position: absolute;
   top: 2.25rem;
@@ -625,7 +679,17 @@ body {
   background: white;
   border-radius: 10000px;
 }
-.footer__social {
+@media (min-width: 90rem) {
+  .footer .div1 .footer__links a:not(:last-child) {
+    margin-right: 1.3rem;
+  }
+}
+@media (min-width: 90rem) {
+  .footer .div2 {
+    margin-left: auto;
+  }
+}
+.footer .div2 .footer__social {
   padding: 1.75rem 0 1.625rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,25 +698,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.footer__social a {
+.footer .div2 .footer__social a {
   position: relative;
   text-decoration: none;
   color: white;
   font-size: 2rem;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
-.footer__social a:not(:last-child) {
+.footer .div2 .footer__social a:not(:last-child) {
   margin-right: 1.625rem;
 }
-.footer__social a:hover::after {
+.footer .div2 .footer__social a:hover::after {
   content: "";
   position: absolute;
   top: 2.825rem;
@@ -665,7 +729,7 @@ body {
   background: white;
   border-radius: 10000px;
 }
-.footer p {
+.footer .div2 p {
   color: #8c8c8c;
   font-family: "Alata", sans-serif;
   font-size: 1.275rem;
