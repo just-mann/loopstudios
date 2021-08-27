@@ -637,8 +637,8 @@ body {
 .footer .div1 .footer__links a:hover::after {
   content: "";
   position: absolute;
-  top: 1.75rem;
-  left: 53%;
+  top: 1.97rem;
+  left: 51%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   height: 0.18rem;
@@ -653,6 +653,19 @@ body {
 @media (min-width: 90rem) {
   .footer .div1 .footer__links a {
     font-size: 1.2rem;
+  }
+  .footer .div1 .footer__links a:hover::after {
+    content: "";
+    position: absolute;
+    top: 1.75rem;
+    left: 53%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    height: 0.18rem;
+    width: 2.3125rem;
+    margin: auto;
+    background: white;
+    border-radius: 625rem;
   }
   .footer .div1 .footer__links a:not(:last-child) {
     margin-right: 1.25rem;
@@ -700,7 +713,7 @@ body {
   content: "";
   position: absolute;
   top: 35px;
-  left: 53%;
+  left: 41%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   height: 0.18rem;
@@ -714,8 +727,22 @@ body {
 }
 @media (min-width: 90rem) {
   .footer .div2 .footer__social a {
+    display: inline;
     color: white;
     margin: 0 0 1.2rem 0;
+  }
+  .footer .div2 .footer__social a:hover::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 53%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    height: 0.18rem;
+    width: 1.8125rem;
+    margin: auto;
+    background: white;
+    border-radius: 625rem;
   }
   .footer .div2 .footer__social a:not(:last-child) {
     margin-right: 1.345rem;

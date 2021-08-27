@@ -16,8 +16,6 @@
   }
 
   .div1 {
-    // background: yellow;
-
 
     @include breakpoint-desktop(desktop) {
       display: flex;
@@ -58,8 +56,8 @@
           &::after {
             content: '';
             position: absolute;
-            top: 1.75rem;
-            left: 53%;
+            top: 1.97rem;
+            left: 51%;
             transform: translate(-50%);
             height: 0.18rem;
             width: 2.3125rem;
@@ -76,18 +74,31 @@
         @include breakpoint-desktop(desktop) {
           font-size: 1.2rem;
 
+          &:hover {
+            &::after {
+              content: '';
+              position: absolute;
+              top: 1.75rem;
+              left: 53%;
+              transform: translate(-50%);
+              height: 0.18rem;
+              width: 2.3125rem;
+              margin: auto;
+              background: $white;
+              border-radius: 625rem;
+            }
+          }
+
+
           &:not(:last-child) {
             margin-right: 1.25rem;
           }
         }
       }
     }
-
-
   }
 
   .div2 {
-    // background: pink;
 
     @include breakpoint-desktop(desktop) {
       display: flex;
@@ -98,7 +109,6 @@
     }
 
     .footer__social {
-
 
       @include breakpoint-desktop(desktop) {
         display: flex;
@@ -120,7 +130,7 @@
             content: '';
             position: absolute;
             top: 35px;
-            left: 53%;
+            left: 41%;
             transform: translate(-50%);
             height: 0.18rem;
             width: 1.8125rem;
@@ -137,13 +147,28 @@
 
 
         @include breakpoint-desktop(desktop) {
+          display: inline;
           color: $white;
           margin: 0 0 1.2rem 0;
+
+          &:hover {
+            &::after {
+              content: '';
+              position: absolute;
+              top: 35px;
+              left: 53%;
+              transform: translate(-50%);
+              height: 0.18rem;
+              width: 1.8125rem;
+              margin: auto;
+              background: $white;
+              border-radius: 625rem;
+            }
+          }
 
           &:not(:last-child) {
             margin-right: 1.345rem;
           }
-
         }
       }
     }
@@ -156,14 +181,11 @@
       color: $white;
       font-size: 1.2rem;
 
-
       @include breakpoint-desktop(desktop) {
         padding: 0;
         font-size: 1.1rem;
       }
     }
-
-
   }
 
 }
