@@ -42,7 +42,7 @@
 
       @include breakpoint-desktop(desktop) {
         flex-direction: row;
-        padding: 0;
+        padding: 0.4rem 0;
       }
 
       a {
@@ -50,7 +50,8 @@
         font-family: $fontTwo;
         font-weight: bold;
         color: $white;
-        font-size: 1.2rem;
+        font-size: 1.5625rem;
+
 
         &:not(:last-child) {
           margin-bottom: 2.25rem;
@@ -96,6 +97,11 @@
         font-size: 1.8125rem;
 
 
+        &:not(:last-child) {
+          margin-right: 1.25rem;
+        }
+
+
         @include breakpoint-desktop(desktop) {
           color: $white;
           margin: 0 0 1.2rem 0;
@@ -103,6 +109,7 @@
           &:not(:last-child) {
             margin-right: 1.345rem;
           }
+
         }
       }
     }
@@ -113,10 +120,11 @@
       font-family: $fontOne;
       padding: 1.875rem 0 0 0;
       color: $white;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
 
 
       @include breakpoint-desktop(desktop) {
+        padding: 0;
         font-size: 1.1rem;
       }
     }
