@@ -58,14 +58,14 @@
           &::after {
             content: '';
             position: absolute;
-            top: 28px;
+            top: 1.75rem;
             left: 53%;
             transform: translate(-50%);
-            height: 2px;
-            width: 37px;
+            height: 0.18rem;
+            width: 2.3125rem;
             margin: auto;
             background: $white;
-            border-radius: 10000px;
+            border-radius: 625rem;
           }
         }
 
@@ -123,10 +123,10 @@
             left: 53%;
             transform: translate(-50%);
             height: 0.18rem;
-            width: 29px;
+            width: 1.8125rem;
             margin: auto;
             background: $white;
-            border-radius: 10000px;
+            border-radius: 625rem;
           }
         }
 

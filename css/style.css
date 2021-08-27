@@ -637,15 +637,15 @@ body {
 .footer .div1 .footer__links a:hover::after {
   content: "";
   position: absolute;
-  top: 28px;
+  top: 1.75rem;
   left: 53%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  height: 2px;
-  width: 37px;
+  height: 0.18rem;
+  width: 2.3125rem;
   margin: auto;
   background: white;
-  border-radius: 10000px;
+  border-radius: 625rem;
 }
 .footer .div1 .footer__links a:not(:last-child) {
   margin-bottom: 2.25rem;
@@ -704,10 +704,10 @@ body {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   height: 0.18rem;
-  width: 29px;
+  width: 1.8125rem;
   margin: auto;
   background: white;
-  border-radius: 10000px;
+  border-radius: 625rem;
 }
 .footer .div2 .footer__social a:not(:last-child) {
   margin-right: 1.25rem;
